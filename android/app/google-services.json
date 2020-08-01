@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "869835991906",
+    "firebase_url": "https://angely-282104.firebaseio.com",
+    "project_id": "angely-282104",
+    "storage_bucket": "angely-282104.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869835991906:android:248fe783f6577c64921a3b",
+        "android_client_info": {
+          "package_name": "com.angely.deliveryboy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "869835991906-8laq4n8ks9v6sp8baavkufccojhu0ibv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCN58W9T8_hrDFI6-4Z845JnP3DXkizyy8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "869835991906-8laq4n8ks9v6sp8baavkufccojhu0ibv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
