@@ -316,47 +316,100 @@ class _OrderWidgetState extends StateMVC<OrderWidget> {
                               Row(
                                 children: <Widget>[
                                   Expanded(
-                                    child: Text(
-                                      S.of(context).subtotal,
-                                      style: Theme.of(context).textTheme.bodyText1,
+                                    child: IgnorePointer(
+                                      ignoring: true,
+                                      child: Opacity(
+                                        opacity: 0.0,
+                                        child: Text(
+
+                                          S.of(context).subtotal,
+                                          style: Theme.of(context).textTheme.bodyText1,
+                                        ),
+                                      ),
                                     ),
                                   ),
-                                  Helper.getPrice(Helper.getSubTotalOrdersPrice(_con.order), context, style: Theme.of(context).textTheme.subtitle1)
+                                  IgnorePointer(
+                                      ignoring: true,
+                                      child: Opacity(
+                                          opacity: 0.0,
+                                          child: Helper.getPrice(Helper.getSubTotalOrdersPrice(_con.order), context, style: Theme.of(context).textTheme.subtitle1)
+                                      )
+                                  )
+
                                 ],
                               ),
                               SizedBox(height: 5),
                               Row(
                                 children: <Widget>[
                                   Expanded(
-                                    child: Text(
-                                      S.of(context).delivery_fee,
-                                      style: Theme.of(context).textTheme.bodyText1,
+                                    child: IgnorePointer(
+                                      ignoring: true,
+                                      child: Opacity(
+                                        opacity: 0.0,
+                                        child: Text(
+                                          S.of(context).delivery_fee,
+                                          style: Theme.of(context).textTheme.bodyText1,
+                                        ),
+                                      ),
                                     ),
                                   ),
-                                  Helper.getPrice(_con.order.deliveryFee, context, style: Theme.of(context).textTheme.subtitle1)
+
+                                  IgnorePointer(
+                                    ignoring: true,
+                                      child: Opacity(
+                                        opacity: 0.0,
+                                          child: Helper.getPrice(_con.order.deliveryFee, context, style: Theme.of(context).textTheme.subtitle1)
+                                      )
+                                  )
                                 ],
                               ),
                               Row(
                                 children: <Widget>[
                                   Expanded(
-                                    child: Text(
-                                      '${S.of(context).tax} (${_con.order.tax}%)',
-                                      style: Theme.of(context).textTheme.bodyText1,
+                                    child: IgnorePointer(
+                                      ignoring: true,
+                                      child: Opacity(
+                                        opacity: 0.0,
+                                        child: Text(
+                                          '${S.of(context).tax} (${_con.order.tax}%)',
+                                          style: Theme.of(context).textTheme.bodyText1,
+                                        ),
+                                      ),
                                     ),
                                   ),
-                                  Helper.getPrice(Helper.getTaxOrder(_con.order), context, style: Theme.of(context).textTheme.subtitle1)
+                                  IgnorePointer(
+                                      ignoring: true,
+                                      child: Opacity(
+                                          opacity: 0.0,
+                                          child: Helper.getPrice(Helper.getTaxOrder(_con.order), context, style: Theme.of(context).textTheme.subtitle1)
+                                      )
+                                  )
+
                                 ],
                               ),
                               Divider(height: 30),
                               Row(
                                 children: <Widget>[
                                   Expanded(
-                                    child: Text(
-                                      S.of(context).total,
-                                      style: Theme.of(context).textTheme.headline6,
+                                    child: IgnorePointer(
+                                      ignoring: true,
+                                      child: Opacity(
+                                        opacity: 0.0,
+                                        child: Text(
+                                          S.of(context).total,
+                                          style: Theme.of(context).textTheme.headline6,
+                                        ),
+                                      ),
                                     ),
                                   ),
-                                  Helper.getPrice(Helper.getTotalOrdersPrice(_con.order), context, style: Theme.of(context).textTheme.headline6)
+                                  IgnorePointer(
+                                      ignoring: true,
+                                      child: Opacity(
+                                          opacity: 0.0,
+                                          child:  Helper.getPrice(Helper.getTotalOrdersPrice(_con.order), context, style: Theme.of(context).textTheme.headline6)
+                                      )
+                                  )
+
                                 ],
                               ),
                               SizedBox(height: 20),
@@ -401,7 +454,8 @@ class _OrderWidgetState extends StateMVC<OrderWidget> {
                                       ),
                                     )
                                   : SizedBox(height: 0),
-                              SizedBox(height: 10),
+                              //SizedBox(height: 10),
+
                             ],
                           ),
                         ),
